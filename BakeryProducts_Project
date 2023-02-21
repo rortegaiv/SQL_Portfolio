@@ -1,0 +1,18 @@
+CREATE TABLE products (id INTEGER PRIMARY KEY, name TEXT, price INTEGER, quantity INTEGER, temperature TEXT);
+INSERT INTO products VALUES(1, "cinnamon rolls", 5, 12, "warm");
+INSERT INTO products VALUES(2, "assorted macarons", 5, 50, "cold");
+INSERT INTO products VALUES(3, "angel cake slice", 3, 16, "cold");
+INSERT INTO products VALUES(4, "devil food cake slice", 3, 16, "cold");
+INSERT INTO products VALUES(5, "angel food cake", 20, 1, "cold");
+INSERT INTO products VALUES(6, "devil food cake", 20, 1, "cold");
+INSERT INTO products VALUES(7, "guava pastry", 3, 30, "warm");
+INSERT INTO products VALUES(8, "cheese pastry", 3, 30, "warm");
+INSERT INTO products VALUES(9, "guava and cheese pastry", 4, 30, "warm");
+INSERT INTO products VALUES(10, "dominican rice pudding", 5, 50, "cold");
+INSERT INTO products VALUES(11, "apple pie slice", 3, 16, "warm");
+INSERT INTO products VALUES(12, "apple pie", 20, 1, "warm");
+INSERT INTO products VALUES(13, "chocolate mousse", 8, 15, "cold");
+INSERT INTO products VALUES(14, "berry cake slice", 3, 24, "warm");
+INSERT INTO products VALUES(15, "berry cake", 20, 1, "warm");
+SELECT * FROM products ORDER BY price;
+SELECT AVG(price) FROM products;
